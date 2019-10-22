@@ -5,7 +5,14 @@ import React from 'react'
 // }
 
 
-export const Greet = () => <h1>Hello Hussein</h1>
-
+export const Greet = props => {
+  console.log(props);
+  return (
+    <div>
+      <h1>Hello {props.name}, my name is {props.superName}</h1>
+      {props.children}
+    </div>
+  )
+}
 
 //export default Greet
