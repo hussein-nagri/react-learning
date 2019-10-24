@@ -20,6 +20,19 @@ import Form from './components/Form';
 import LifecycleA from './components/LifecycleA';
 import FragmentDemo from './components/FragmentDemo';
 import Table from './components/Table';
+import PureComp from './components/PureComp';
+import RefsDemo from './components/RefsDemo';
+import Input from './components/Input';
+import FocusInput from './components/FocusInput';
+import FRParentInput from './components/FRParentInput';
+import Hero from './components/Hero';
+import ErrorBoundary from './components/ErrorBoundary';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
+import ClickCounterTwo from './components/ClickCounterTwo';
+import HoverCounterTwo from './components/HoverCounterTwo';
+import User from './components/User';
+import Counter1 from './components/Counter1';
 
 function App() {
   return (
@@ -56,9 +69,42 @@ function App() {
 
       {/* <LifecycleA></LifecycleA> */}
 
-      <FragmentDemo></FragmentDemo>
+      {/* <FragmentDemo></FragmentDemo>
 
-      <Table></Table>
+      <Table></Table> */}
+
+      {/* <ParentComponent></ParentComponent> */}
+      {/* <RefsDemo></RefsDemo> */}
+
+      {/* <FocusInput></FocusInput>*/}
+
+      {/* <FRParentInput></FRParentInput> */}
+      {/* <ErrorBoundary>
+        <Hero heroName="Bat"></Hero>
+        <Hero heroName="dog"></Hero>
+        <Hero heroName="Joker"></Hero>
+
+      </ErrorBoundary> */}
+
+      {/* 
+      <ClickCounter name="HUssein">
+      </ClickCounter>
+      <HoverCounter></HoverCounter> */}
+      {/* 
+      <ClickCounterTwo></ClickCounterTwo>
+      <HoverCounterTwo></HoverCounterTwo>
+      <User name={(isLoggedIn) => isLoggedIn ? "Husseinn" : "Guest"}></User> */}
+
+
+      <Counter1 render={(count, incrementCount) => (
+        <ClickCounterTwo count={count} incrementCount={incrementCount} ></ClickCounterTwo>
+      )}></Counter1>
+
+      <Counter1 render={(count, incrementCount) => (
+        <HoverCounterTwo count={count} incrementCount={incrementCount} ></HoverCounterTwo>
+      )
+
+      }></Counter1>
     </div>
   );
 }

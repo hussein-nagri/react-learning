@@ -4,7 +4,7 @@ function Column() {
   const items = []
   return (
     <React.Fragment>
-      {
+      {/* {
         items.map(item => (
           <React.Fragment key={item.id}>
             <h1> Title</h1>
@@ -13,7 +13,7 @@ function Column() {
         )
 
         )
-      }
+      } */}
 
 
 
