@@ -1,38 +1,45 @@
 import React from 'react';
 import './App.css';
-import './components/Greet'
+import './componentsFundamentals/Greet'
 //import myComponent from './components/Greet';
-import { Greet } from './components/Greet';
-import Welcome from './components/Welcome';
-import Message from './components/Message';
-import Counter from './components/Counter';
-import FunctionClick from './components/FunctionClick';
-import ClassClick from './components/ClassClick';
-import EventBind from './components/EventBind';
-import ParentComponent from './ParentComponent';
-import UserGreeting from './components/UserGreeting';
-import NameList from './components/NameList';
-import Stylesheet from './components/Stylesheet';
-import InLine from './components/InLine';
+import { Greet } from './componentsFundamentals/Greet';
+import Welcome from './componentsFundamentals/Welcome';
+import Message from './componentsFundamentals/Message';
+import Counter from './componentsFundamentals/Counter';
+import FunctionClick from './componentsFundamentals/FunctionClick';
+import ClassClick from './componentsFundamentals/ClassClick';
+import EventBind from './componentsFundamentals/EventBind';
+import ParentComponent from './componentsFundamentals/ParentComponent';
+import UserGreeting from './componentsFundamentals/UserGreeting';
+import NameList from './componentsFundamentals/NameList';
+import Stylesheet from './componentsFundamentals/Stylesheet';
+//import InLine from './componentsFundamentals/inLine';
 import "./appStyles.css";
 import styles from "./appStyles.module.css";
-import Form from './components/Form';
-import LifecycleA from './components/LifecycleA';
-import FragmentDemo from './components/FragmentDemo';
-import Table from './components/Table';
-import PureComp from './components/PureComp';
-import RefsDemo from './components/RefsDemo';
-import Input from './components/Input';
-import FocusInput from './components/FocusInput';
-import FRParentInput from './components/FRParentInput';
-import Hero from './components/Hero';
-import ErrorBoundary from './components/ErrorBoundary';
-import ClickCounter from './components/ClickCounter';
-import HoverCounter from './components/HoverCounter';
-import ClickCounterTwo from './components/ClickCounterTwo';
-import HoverCounterTwo from './components/HoverCounterTwo';
-import User from './components/User';
-import Counter1 from './components/Counter1';
+import Form from './componentsFundamentals/Form';
+import LifecycleA from './componentsFundamentals/LifecycleA';
+import FragmentDemo from './componentsFundamentals/FragmentDemo';
+import Table from './componentsFundamentals/Table';
+import PureComp from './componentsFundamentals/PureComp';
+import RefsDemo from './componentsFundamentals/RefsDemo';
+import Input from './componentsFundamentals/Input';
+import FocusInput from './componentsFundamentals/FocusInput';
+import FRParentInput from './componentsFundamentals/FRParentInput';
+import Hero from './componentsFundamentals/Hero';
+import ErrorBoundary from './componentsFundamentals/ErrorBoundary';
+import ClickCounter from './componentsFundamentals/ClickCounter';
+import HoverCounter from './componentsFundamentals/HoverCounter';
+import ClickCounterTwo from './componentsFundamentals/ClickCounterTwo';
+import HoverCounterTwo from './componentsFundamentals/HoverCounterTwo';
+import User from './componentsFundamentals/User';
+import Counter1 from './componentsFundamentals/Counter1';
+import ComponentC from './componentsFundamentals/ComponentC';
+import { userProvider } from './componentsFundamentals/userContext';
+import PostList from './HttpAndHookComponents/PostList';
+import PostForm from './HttpAndHookComponents/PostForm';
+import ClassCounter from './HttpAndHookComponents/ClassCounter';
+import HookCounterTwo from './HttpAndHookComponents/HookCounterTwo';
+import HookCounterThree from './HttpAndHookComponents/HookCounterThree';
 
 function App() {
   return (
@@ -96,7 +103,7 @@ function App() {
       <User name={(isLoggedIn) => isLoggedIn ? "Husseinn" : "Guest"}></User> */}
 
 
-      <Counter1 render={(count, incrementCount) => (
+      {/* <Counter1 render={(count, incrementCount) => (
         <ClickCounterTwo count={count} incrementCount={incrementCount} ></ClickCounterTwo>
       )}></Counter1>
 
@@ -104,7 +111,28 @@ function App() {
         <HoverCounterTwo count={count} incrementCount={incrementCount} ></HoverCounterTwo>
       )
 
-      }></Counter1>
+      }></Counter1> */}
+
+      {/* <userProvider value="Hussein">
+        <ComponentC>
+
+        </ComponentC>
+      </userProvider> */}
+
+
+      {/* <PostList></PostList> */}
+
+      {/* <PostForm></PostForm> */}
+
+
+      {/* <ClassCounter></ClassCounter>
+      */}
+
+      {/* <HookCounterTwo></HookCounterTwo>
+       */}
+
+
+      <HookCounterThree></HookCounterThree>
     </div>
   );
 }
