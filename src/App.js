@@ -40,6 +40,16 @@ import PostForm from './HttpAndHookComponents/PostForm';
 import ClassCounter from './HttpAndHookComponents/ClassCounter';
 import HookCounterTwo from './HttpAndHookComponents/HookCounterTwo';
 import HookCounterThree from './HttpAndHookComponents/HookCounterThree';
+import HookCounterFour from './HttpAndHookComponents/HookCounterFour';
+import HookCounterOne from './HttpAndHookComponents/HookCounterOne';
+import HookMouse from './HttpAndHookComponents/HookMouse';
+import MousContainer from './HttpAndHookComponents/MousContainer';
+import DataFetching from './HttpAndHookComponents/DataFetching';
+import CounterOne from './HttpAndHookComponents/CounterOne';
+import DataFetchingOne from './HttpAndHookComponents/DataFetchingOne';
+import DocTitleOne from './HttpAndHookComponents/DocTitleOne';
+import HookCOunterOnne from './HttpAndHookComponents/HookCOunterOnne';
+import UserFoorm from './HttpAndHookComponents/UserFoorm';
 
 function App() {
   return (
@@ -132,7 +142,34 @@ function App() {
        */}
 
 
-      <HookCounterThree></HookCounterThree>
+      {/* <HookCounterThree></HookCounterThree> */}
+
+      {/* <HookCounterFour></HookCounterFour> */}
+      {/* <HookCounterOne></HookCounterOne> */}
+
+
+      {/* <HookMouse></HookMouse> */}
+
+
+      {/* <MousContainer> </MousContainer>
+      
+      */}
+
+
+      {/* <DataFetching></DataFetching> */}
+
+      {/* <CounterOne></CounterOne> */}
+      {/* <DataFetchingOne></DataFetchingOne>
+      
+      */}
+
+
+      {/* <DocTitleOne></DocTitleOne> */}
+
+
+      {/* <HookCOunterOnne></HookCOunterOnne> */}
+
+      <UserFoorm></UserFoorm>
     </div>
   );
 }
